@@ -1,7 +1,7 @@
 import { UserEntity } from '../shared/entities';
 
 export const dbOptions = (): any => ({
-  type: process.env.DATABASE_TYPE,
+  type: '', // process.env.DATABASE_TYPE,
   host: process.env.DATABASE_HOST,
   port: parseInt(process.env.DATABASE_PORT, 10),
   username: process.env.DATABASE_USERNAME,
