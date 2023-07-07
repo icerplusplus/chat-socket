@@ -18,6 +18,12 @@
     "REDIS_HOST": "localhost",
     "REDIS_PORT": "6379"
   },
+  "builds": [
+    {
+      "src": "server/src/main.ts",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
