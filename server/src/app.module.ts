@@ -9,6 +9,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { ChatModule } from './modules/chats';
 import { join } from 'path';
 import { RedisModule } from './shared/common';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -36,8 +37,9 @@ import { RedisModule } from './shared/common';
     UserModule,
     FileModule,
     ChatModule,
+    AppController,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}
